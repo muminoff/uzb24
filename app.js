@@ -22,7 +22,7 @@ io.set('log level', 0);
 CreateTwitter();
 io.sockets.on('connection', function(socket) {
 
-  twit.stream('user',{track:'obama'}, function(stream) {
+  twit.stream('user',{track:'#uzb24'}, function(stream) {
     stream.on('data', function(tweet) {
       socket.emit('message', JSON.stringify(tweet));
     });

@@ -5,7 +5,7 @@ socket.on('message', function(json) {
   if(data.text) {
   var replacePattern = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
   var replacedText = (data.text).replace(replacePattern, '<a href="$1" target="_blank">$1</a>');
-  replacedText = replacedText.replace('#news', '<span class="label label-success"><strong>#news</strong></span>');
+  replacedText = replacedText.replace('#uzb24', '<span class="label label-success"><strong>#uzb24</strong></span>');
   $("<li></li>").html(replacedText)
   .prependTo("ul.uzb24-tweets");
 }
