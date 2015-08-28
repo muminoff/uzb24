@@ -5,4 +5,4 @@ Twitter real-time streaming web-site which was inspired by [this guy's post](htt
 
 I coded this project during 1 hour and it may have bugs. If you find it, please, open an issue.
 
-### [Online demo](http://uzb24.herokuapp.com)
+### [Online demo](http://uzb24.muminoff.com)
