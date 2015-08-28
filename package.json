@@ -1,0 +1,21 @@
+{
+  "name": "uzb24",
+  "description": "Twitter real-time streaming web-site",
+  "homepage": "http://uzb24.herokuapp.com",
+  "keywords": [
+    "websocket",
+    "socket",
+    "realtime",
+    "socket.io",
+    "twitter"
+  ],
+  "author": {
+    "name": "muminoff",
+    "email": "smuminov@gmail.com"
+  },
+  "dependencies": {
+    "socket.io": "0.9.16",
+    "ntwitter": "0.5.0",
+    "express": "4.0.0"
+  }
+}

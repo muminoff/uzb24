@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+<meta name="description" content="Twitter орқали Мустақиллигимизнинг 24 йиллигига бағишлаб №гяи24 хэштегини трендга чиқаришга уруниб кўрамиз!">
+<meta name="keywords" content="ўзбек, ўзбек тили, ўзбекча, твиттер, ўзбеклар твиттерда">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Sardor Muminov">
+<meta name="web_author" content="Sardor Muminov">
+<meta name="author" content="Sardor Muminov">
+<meta name="language" content="uzbek">
+<meta name="rating" content="general">
+<link rel="shortcut icon" href="/uzb24.ico" />
+<style>
+  body{
+    padding-top:20px;
+    font-family: 'Noto Serif';
+  }
+  ul.uzb24-tweets {
+    list-style-image: url('uzb24.png');
+  }
+  .corner-ribbon {
+    width: 200px;
+    background: #e43;
+    position: absolute;
+    top: 25px;
+    left: -50px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .corner-ribbon.sticky{
+    position: fixed;
+  }
+  .corner-ribbon.top-right{
+    top: 25px;
+    right: -50px;
+    left: auto;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .corner-ribbon.blue{background: #39d;}
+  a, a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  h4, #twitter-stream {
+    margin: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <h4>Ўзбекистон мустақиллигининг 24 йиллигига бағишланади</h4>
+    <div class="corner-ribbon top-right sticky blue"><a href="https://github.com/muminoff/uzb24">Лойиҳа</a></div>
+  </div>
+  <div class="row">
+    <div id="twitter-stream">
+      <ul class="uzb24-tweets"></ul>
+    </div>
+  </div>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/uzb24.js"></script>
+</body>
+</html>
