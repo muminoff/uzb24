@@ -1,1 +1,1 @@
-web: node dashboard.js
+web: node app.js
